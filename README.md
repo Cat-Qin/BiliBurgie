@@ -2,6 +2,8 @@
 
 **B站直播弹幕 → 游戏指令中继器**
 
+~~比利·伯吉，你也可以叫他———比伯（）~~
+
 专为 [Burgie's Cozy Kitchen](https://heynaugames.com/burgie-commands) 直播模式设计。 观众在 B站直播间发弹幕，BiliBurgie 自动翻译成游戏指令，通过 IRC 发送给游戏客户端，实现弹幕互动玩法。
 
 ![Platform](https://img.shields.io/badge/platform-Windows-blue) ![Python](https://img.shields.io/badge/python-3.11%2B-green) ![License](https://img.shields.io/badge/license-MIT-orange)
