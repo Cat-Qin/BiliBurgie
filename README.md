@@ -8,7 +8,7 @@
 
 > 📺 详细使用教程请看 B站 [@黑猫厌胜](https://space.bilibili.com/14957556)
 
-![Platform](https://img.shields.io/badge/platform-Windows-blue) ![Python](https://img.shields.io/badge/python-3.11%2B-green) ![License](https://img.shields.io/badge/license-MIT-orange)
+![Platform](https://img.shields.io/badge/platform-Windows-blue) ![Python](https://img.shields.io/badge/python-3.11%2B-green) ![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial-orange)
 
 <p align="center"><img src="logo.png" alt="BiliBurgie Logo" width="128"></p>
 
@@ -171,7 +171,7 @@ pyinstaller build.spec --clean --noconfirm
 
 >花了10块左右的token，用的是deepseek-v4-pro，耗时两天，大家可以参考一下
 
-> 本项目遵循 MIT 开源协议，欢迎贡献代码或提出改进建议。
+> 本项目遵循 PolyForm Noncommercial 许可证，欢迎贡献代码或提出改进建议。
 
 ---
 
