@@ -53,7 +53,9 @@
 
 ### 方式一：下载可执行文件（推荐）
 
-从 [Releases](../../releases) 页面下载 `BiliBurgie.exe`，双击运行，无需安装 Python。
+从 [百度网盘](通过网盘分享的文件：BiliBurgie
+链接: https://pan.baidu.com/s/1oTpOuXiRuAAPvr_7N5PSlA?pwd=t3gv) 页面下载 `BiliBurgie.exe`，双击运行，无需安装 Python。
+>他那个release我不知道为啥发不上去
 
 ### 方式二：源码运行
 
