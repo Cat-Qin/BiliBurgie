@@ -59,8 +59,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/你的用户名/BurgerRelay.git
-cd BurgerRelay
+git clone https://github.com/Cat-Qin/BiliBurgie.git
+cd BiliBurgie
 
 # 创建虚拟环境（可选）
 python -m venv .venv
