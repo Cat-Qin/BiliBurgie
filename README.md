@@ -6,6 +6,8 @@
 
 专为 [Burgie's Cozy Kitchen](https://heynaugames.com/burgie-commands) 直播模式设计。 观众在 B站直播间发弹幕，BiliBurgie 自动翻译成游戏指令，通过 IRC 发送给游戏客户端，实现弹幕互动玩法。
 
+> 📺 详细使用教程请看 B站 [@黑猫厌胜](https://space.bilibili.com/14957556)
+
 ![Platform](https://img.shields.io/badge/platform-Windows-blue) ![Python](https://img.shields.io/badge/python-3.11%2B-green) ![License](https://img.shields.io/badge/license-MIT-orange)
 
 <p align="center"><img src="logo.png" alt="BiliBurgie Logo" width="128"></p>
