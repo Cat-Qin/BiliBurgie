@@ -1,0 +1,6 @@
+﻿# Burger Relay - Requirements
+PyQt5>=5.15.0
+PyYAML>=6.0
+aiohttp>=3.8.0
+blivedm>=0.1.0
+websockets>=10.0

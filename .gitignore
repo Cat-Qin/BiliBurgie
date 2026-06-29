@@ -1,0 +1,30 @@
+# User data — contains sensitive info (cookies, API keys)
+config.yaml
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build
+dist/
+build/
+*.spec
+!build.spec
+
+# Claude / AI agent data
+.agents/
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
