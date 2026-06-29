@@ -1,12 +1,12 @@
-# 🍔 Burger Relay
+# 🍔 Biliurgie
 
 **B站直播弹幕 → 游戏指令中继器**
 
-专为 [Burgie's Cozy Kitchen](https://heynaugames.com/burgie-commands) 直播模式设计。 观众在 B站直播间发弹幕，Burger Relay 自动翻译成游戏指令，通过 IRC 发送给游戏客户端，实现弹幕互动玩法。
+专为 [Burgie's Cozy Kitchen](https://heynaugames.com/burgie-commands) 直播模式设计。 观众在 B站直播间发弹幕，Biliurgie 自动翻译成游戏指令，通过 IRC 发送给游戏客户端，实现弹幕互动玩法。
 
 ![Platform](https://img.shields.io/badge/platform-Windows-blue) ![Python](https://img.shields.io/badge/python-3.11%2B-green) ![License](https://img.shields.io/badge/license-MIT-orange)
 
-<p align="center"><img src="logo.png" alt="Burger Relay Logo" width="128"></p>
+<p align="center"><img src="logo.png" alt="Biliurgie Logo" width="128"></p>
 
 ---
 
@@ -40,7 +40,7 @@
 ### 🔒 隐私安全
 - 配置文件加密存储（XOR + Base64），Cookie / API Key 不会明文泄露
 - 所有配置完全本地加载，网络交互只限于弹幕获取与大模型调用
-- 配置文件存储在用户目录（`%APPDATA%\Burger Relay\config.dat`）
+- 配置文件存储在用户目录（`%APPDATA%\Biliurgie\config.dat`）
 - 日志仅在内存中，手动导出才会写盘
 
 ---
@@ -49,7 +49,7 @@
 
 ### 方式一：下载可执行文件（推荐）
 
-从 [Releases](../../releases) 页面下载 `BurgerRelay.exe`，双击运行，无需安装 Python。
+从 [Releases](../../releases) 页面下载 `Biliurgie.exe`，双击运行，无需安装 Python。
 
 ### 方式二：源码运行
 
@@ -113,7 +113,7 @@ python main.py
 ## 🎮 使用流程
 
 1. 打开 Burgie's Cozy Kitchen 游戏，进入直播模式
-2. 在 Burger Relay 中填入直播间 ID
+2. 在 Biliurgie 中填入直播间 ID
 3. 配置大模型（可选）
 4. 点击 **▶ 启动**
 5. 游戏连接 `127.0.0.1:6667`
@@ -134,7 +134,7 @@ python main.py
 ```bash
 pip install pyinstaller
 pyinstaller build.spec --clean --noconfirm
-# 输出在 dist/BurgerRelay.exe
+# 输出在 dist/Biliurgie.exe
 ```
 
 ---

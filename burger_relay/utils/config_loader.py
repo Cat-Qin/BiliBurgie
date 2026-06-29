@@ -38,8 +38,13 @@ def _decrypt(ciphertext: str) -> str:
 # Config path
 # ---------------------------------------------------------------------------
 
+# Old data dir (project was formerly named "Burger Relay")
+_OLD_DATA_DIR = os.path.join(os.path.dirname(USER_DATA_DIR), "Burger Relay")
+
 _CONFIG_PATH = os.path.join(USER_DATA_DIR, "config.dat")
 _LEGACY_PATH = os.path.join(USER_DATA_DIR, "config.yaml")
+_OLD_LEGACY_PATH = os.path.join(_OLD_DATA_DIR, "config.yaml")
+_OLD_CONFIG_PATH = os.path.join(_OLD_DATA_DIR, "config.dat")
 _OLD_CWD_PATH = "config.yaml"
 
 _config_cache: dict | None = None
@@ -53,10 +58,24 @@ def _ensure_user_dir() -> None:
 # Load / Save
 # ---------------------------------------------------------------------------
 
+def _migrate_old_data_dir() -> None:
+    """Copy config from old 'Burger Relay' data dir if it exists."""
+    if not os.path.exists(_CONFIG_PATH) and not os.path.exists(_LEGACY_PATH):
+        for old in (_OLD_CONFIG_PATH, _OLD_LEGACY_PATH):
+            if os.path.exists(old):
+                try:
+                    import shutil
+                    os.makedirs(USER_DATA_DIR, exist_ok=True)
+                    shutil.copy2(old, _CONFIG_PATH if old.endswith(".dat") else _LEGACY_PATH)
+                except Exception:
+                    pass
+
+
 def _migrate_legacy_configs() -> str | None:
-    """Check for unencrypted config files and return their content if found."""
-    # Priority: encrypted dat file > legacy yaml in user dir > old CWD yaml
-    for path in (_CONFIG_PATH, _LEGACY_PATH, _OLD_CWD_PATH):
+    """Check for config files and return their content if found."""
+    _migrate_old_data_dir()
+    # Priority: encrypted dat > legacy yaml > old CWD yaml
+    for path in (_CONFIG_PATH, _LEGACY_PATH, _OLD_LEGACY_PATH, _OLD_CONFIG_PATH, _OLD_CWD_PATH):
         if os.path.exists(path):
             try:
                 if path.endswith(".dat"):

@@ -1,4 +1,4 @@
-﻿# Burger Relay - Requirements
+﻿# Biliurgie - Requirements
 PyQt5>=5.15.0
 PyYAML>=6.0
 aiohttp>=3.8.0

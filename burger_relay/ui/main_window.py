@@ -60,7 +60,7 @@ class _TitleBar(QWidget):
         icon.setStyleSheet("font-size:18px; background:transparent; border:none;")
         layout.addWidget(icon)
 
-        title = QLabel("Burger Relay")
+        title = QLabel("Biliurgie")
         title.setStyleSheet(
             "font-size:14px; font-weight:bold; color:#5D4037;"
             "background:transparent; border:none;")
@@ -121,7 +121,7 @@ class MainWindow(QMainWindow):
 
     def __init__(self) -> None:
         super().__init__()
-        self.setWindowTitle("Burger Relay")
+        self.setWindowTitle("Biliurgie")
         self.resize(1020, 900)
         self._logo_path = _find_logo()
         if self._logo_path:
@@ -369,7 +369,7 @@ class MainWindow(QMainWindow):
         else:
             event.ignore()
             self.hide()
-            self._tray.showMessage("Burger Relay", "程序已最小化到系统托盘",
+            self._tray.showMessage("Biliurgie", "程序已最小化到系统托盘",
                                    QSystemTrayIcon.Information, 2000)
 
 

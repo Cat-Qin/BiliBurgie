@@ -51,7 +51,7 @@ class IRCServer:
 
     async def send_message(self, nickname: str, message: str) -> None:
         """Send a PRIVMSG to all connected clients."""
-        irc_msg = f":{nickname}!user@BurgerRelay PRIVMSG {IRC_CHANNEL} :CHAT|{nickname}|{message}|\r\n"
+        irc_msg = f":{nickname}!user@Biliurgie PRIVMSG {IRC_CHANNEL} :CHAT|{nickname}|{message}|\r\n"
         disconnected = []
         for writer in list(self._clients.keys()):
             try:
@@ -83,13 +83,13 @@ class IRCServer:
     async def _send_handshake(self, writer: asyncio.StreamWriter) -> None:
         def w(msg: str) -> None:
             writer.write(f"{msg}\r\n".encode("utf-8"))
-        w(":BurgerRelay 001 BurgerRelay :Welcome to Burger Relay IRC")
-        w(":BurgerRelay 002 BurgerRelay :Your host is BurgerRelay")
-        w(":BurgerRelay 003 BurgerRelay :This server was created by Burger Relay")
-        w(":BurgerRelay 004 BurgerRelay :BurgerRelay 1.0")
-        w(":BurgerRelay 375 BurgerRelay :- Message of the Day -")
-        w(":BurgerRelay 372 BurgerRelay :- Welcome to Burger Relay IRC Server!")
-        w(":BurgerRelay 376 BurgerRelay :End of /MOTD command")
+        w(":Biliurgie 001 Biliurgie :Welcome to Biliurgie IRC")
+        w(":Biliurgie 002 Biliurgie :Your host is Biliurgie")
+        w(":Biliurgie 003 Biliurgie :This server was created by Biliurgie")
+        w(":Biliurgie 004 Biliurgie :Biliurgie 1.0")
+        w(":Biliurgie 375 Biliurgie :- Message of the Day -")
+        w(":Biliurgie 372 Biliurgie :- Welcome to Biliurgie IRC Server!")
+        w(":Biliurgie 376 Biliurgie :End of /MOTD command")
         await writer.drain()
 
     async def _handle_line(self, writer: asyncio.StreamWriter, line: str) -> None:

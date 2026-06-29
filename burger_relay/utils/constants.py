@@ -19,7 +19,7 @@ DEFAULT_CONFIG = {
 
 import os as _os
 
-APP_NAME = "Burger Relay"
+APP_NAME = "Biliurgie"
 APP_VERSION = "1.0.0"
 
 
@@ -42,10 +42,10 @@ USER_CONFIG_PATH = _os.path.join(USER_DATA_DIR, "config.yaml")
 """Path to the user's config file within USER_DATA_DIR"""
 RECONNECT_BASE_DELAY = 1.0
 RECONNECT_MAX_DELAY = 60.0
-IRC_MOTD = "Welcome to Burger Relay IRC Server!"
-IRC_NICKNAME = "BurgerRelay"
-IRC_USERNAME = "BurgerRelay"
-IRC_REALNAME = "Burger Relay Bridge"
+IRC_MOTD = "Welcome to Biliurgie IRC Server!"
+IRC_NICKNAME = "Biliurgie"
+IRC_USERNAME = "Biliurgie"
+IRC_REALNAME = "Biliurgie Bridge"
 IRC_CHANNEL = "#burger"
 WHITELIST_CLEANUP_INTERVAL = 60.0
 STATS_SAVE_INTERVAL = 60.0

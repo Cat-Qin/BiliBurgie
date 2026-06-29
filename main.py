@@ -1,4 +1,4 @@
-﻿"""Burger Relay - Main entry point."""
+﻿"""Biliurgie - Main entry point."""
 from __future__ import annotations
 import ctypes
 import os
@@ -15,15 +15,15 @@ def main() -> None:
     # Tell Windows this is a standalone app (not python.exe)
     try:
         ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(
-            "BurgerRelay.BurgerRelay")
+            "Biliurgie.Biliurgie")
     except Exception:
         pass
 
     QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
     QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps, True)
     app = QApplication(sys.argv)
-    app.setApplicationName("Burger Relay")
-    app.setOrganizationName("BurgerRelay")
+    app.setApplicationName("Biliurgie")
+    app.setOrganizationName("Biliurgie")
 
     # Set app icon for taskbar
     logo = _find_logo()
