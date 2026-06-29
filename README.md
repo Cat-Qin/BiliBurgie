@@ -4,7 +4,7 @@
 
 ~~比利·伯吉，你也可以叫他———比伯（）~~
 
-专为 [Burgie's Cozy Kitchen](https://heynaugames.com/burgie-commands) 直播模式设计。 观众在 B站直播间发弹幕，BiliBurgie 自动翻译成游戏指令，通过 IRC 发送给游戏客户端，实现弹幕互动玩法。
+专为 [Burgie's Cozy Kitchen](https://store.steampowered.com/app/3314340/Burgies_Cozy_Kitchen/) 直播模式设计。 观众在 B站直播间发弹幕，BiliBurgie 自动翻译成游戏指令，通过 IRC 发送给游戏客户端，实现弹幕互动玩法。
 
 > 📺 详细使用教程请看 B站 [@黑猫厌胜](https://space.bilibili.com/14957556)
 
@@ -175,11 +175,11 @@ pyinstaller build.spec --clean --noconfirm
 
 ## 📄 许可证
 
-MIT License — 详见 [LICENSE](LICENSE)
+非商业许可证 — 详见 [LICENSE](LICENSE)（个人使用/修改/分享 ✅  售卖 ❌）
 
 ---
 
 ## 🙏 致谢
 
 - [blivedm](https://github.com/xfgryujk/blivedm) — B站 弹幕客户端库
-- [Burgie's Cozy Kitchen](https://heynaugames.com/burgie-commands) — 游戏本体，请支持开发者
+- [Burgie's Cozy Kitchen](https://store.steampowered.com/app/3314340/Burgies_Cozy_Kitchen/) — 游戏本体，请支持开发者
